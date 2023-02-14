@@ -56,6 +56,23 @@
     git reset --hard commitID
     git reflog --pretty=oneline 在旧版本上使用该命令，可以看到所有提交历史，从而跳到指定版本
 
+    提交到GitHub上：使用SSH方式
+    先在本地添加仓库，把本地文件提交git仓库。然后在GitHub上建立仓库，使用SSH将本地仓库推送到GitHub上。
+
+    将远程仓库克隆到本地：
+    git clone 远程仓库的地址
+
+    分支操作：
+    master主分支用来保存和记录整个项目已完成的功能代码
+    功能分支是专门用来开发新功能的分支，是临时从master主分支上分叉出来的。当功能开发完毕后，合并到master主分支上
+
+    查看分支列表：
+    git branch
+    git branch 新分支名字 创建一个新的分支，但是用户还是处于当前分支，不会切换到新的分支上
+    git checkout 名字 切换到指定的分支上
+    git checkout -b 名字 创建并切换到新的分支上
+    git merge 名字 在master主分支上执行该命令，将指定的分支合并到主分支上
+
 
 </body>
 
